@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "deterministic-xp-bottle",
+	"version": "${version}",
+	"name": "Deterministic XP Bottle",
+	"description": "This mod makes XP bottles always drop a configurable ammount of XP.",
+	"authors": [
+		"nonsenz"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/deterministic-xp-bottle/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.wendeburg.deterministicxpbottle.DeterministicXPBottle"
+		],
+		"fabric-datagen": [
+			"net.wendeburg.deterministicxpbottle.DeterministicXPBottleDataGenerator"
+		]
+	},
+	"mixins": [
+		"deterministic-xp-bottle.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
