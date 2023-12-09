@@ -3,7 +3,7 @@
 	"id": "deterministic-xp-bottle",
 	"version": "${version}",
 	"name": "Deterministic XP Bottle",
-	"description": "This mod makes XP bottles always drop a configurable ammount of XP.",
+	"description": "Makes XP bottles (Bottle o' Enchanting) always drop a configurable amount of XP.",
 	"authors": [
 		"nonsenz"
 	],

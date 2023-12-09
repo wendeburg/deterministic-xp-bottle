@@ -9,9 +9,9 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 @Mixin(ExperienceBottleEntity.class)
 public class ExperienceBottleEntityMixin {
 	@ModifyVariable(method = "onCollision", at = @At("STORE"), ordinal = 0)
-	private int init(int randomXPAmmount) {
-		// ignore the random xp ammount.
-		// return the constant ammount.
+	private int init(int randomXPAmount) {
+		// ignore the random xp amount.
+		// return the constant amount.
 		return DeterministicXPBottleConfig.droppedXPAmmount;
 	}
 }
