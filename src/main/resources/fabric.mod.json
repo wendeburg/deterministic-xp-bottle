@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "deterministic-xp-bottle",
+	"id": "deterministic-xp-bottles",
 	"version": "${version}",
-	"name": "Deterministic XP Bottle",
+	"name": "Deterministic XP Bottles",
 	"description": "Makes XP bottles (Bottle o' Enchanting) always drop a configurable amount of XP.",
 	"authors": [
 		"nonsenz"
@@ -12,18 +12,18 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/deterministic-xp-bottle/icon.png",
+	"icon": "assets/deterministic-xp-bottles/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.nonsenz.deterministicxpbottle.DeterministicXPBottle"
+			"com.nonsenz.deterministicxpbottles.DeterministicXPBottles"
 		],
 		"fabric-datagen": [
-			"com.nonsenz.deterministicxpbottle.DeterministicXPBottleDataGenerator"
+			"com.nonsenz.deterministicxpbottles.DeterministicXPBottleDataGenerator"
 		]
 	},
 	"mixins": [
-		"deterministic-xp-bottle.mixins.json"
+		"deterministic-xp-bottles.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.0",
