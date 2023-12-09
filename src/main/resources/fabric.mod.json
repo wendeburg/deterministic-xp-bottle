@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.wendeburg.deterministicxpbottle.DeterministicXPBottle"
+			"com.nonsenz.deterministicxpbottle.DeterministicXPBottle"
 		],
 		"fabric-datagen": [
-			"net.wendeburg.deterministicxpbottle.DeterministicXPBottleDataGenerator"
+			"com.nonsenz.deterministicxpbottle.DeterministicXPBottleDataGenerator"
 		]
 	},
 	"mixins": [

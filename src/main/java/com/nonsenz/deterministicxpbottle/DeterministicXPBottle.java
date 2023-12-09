@@ -1,7 +1,9 @@
-package net.wendeburg.deterministicxpbottle;
+package com.nonsenz.deterministicxpbottle;
 
+import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
 
+import com.nonsenz.deterministicxpbottle.config.DeterministicXPBottleConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +13,7 @@ public class DeterministicXPBottle implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		MidnightConfig.init(MOD_ID, DeterministicXPBottleConfig.class);
+		LOGGER.info("Initialized " + MOD_ID);
 	}
 }
