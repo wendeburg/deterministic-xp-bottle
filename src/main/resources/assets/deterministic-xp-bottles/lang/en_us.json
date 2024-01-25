@@ -1,4 +1,4 @@
 {
-  "deterministic-xp-bottles.midnightconfig.title": "Deterministic XP Bottles Configuration",
-  "deterministic-xp-bottles.midnightconfig.droppedXPAmount": "Dropped XP amount"
+  "text.autoconfig.deterministic-xp-bottles.title": "Deterministic XP Bottles Configuration",
+  "text.autoconfig.deterministic-xp-bottles.option.droppedXP": "Dropped XP amount"
 }

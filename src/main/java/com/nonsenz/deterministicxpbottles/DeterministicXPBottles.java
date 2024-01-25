@@ -1,9 +1,10 @@
 package com.nonsenz.deterministicxpbottles;
 
-import eu.midnightdust.lib.config.MidnightConfig;
+import com.nonsenz.deterministicxpbottles.config.DeterminisitcXPBottlesConfig;
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 
-import com.nonsenz.deterministicxpbottles.config.DeterministicXPBottlesConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +14,7 @@ public class DeterministicXPBottles implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		MidnightConfig.init(MOD_ID, DeterministicXPBottlesConfig.class);
+		AutoConfig.register(DeterminisitcXPBottlesConfig.class, JanksonConfigSerializer::new);
 		LOGGER.info("Initialized " + MOD_ID);
 	}
 }
